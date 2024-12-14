@@ -10,3 +10,9 @@ word_list = [
     "delicious", "elephant", "fascinate", "geometry", "heartbeat", "inspire", "journey", "knowledge",
     "lemon", "mystery", "nostalgia", "oxygen", "paradox", "quicksilver", "resilience", "symphony", "treasure"
 ]
+
+chosen_word = random.choice(word_list) # Chooses a word from the list at random
+
+print ("WELCOME TO THE HANGMAN GAME!")
+
+running = True
