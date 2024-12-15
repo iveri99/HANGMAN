@@ -15,8 +15,6 @@ chosen_word = random.choice(word_list) # Chooses a word from the list at random
 
 print ("WELCOME TO THE HANGMAN GAME!")
 
-running = True
-
 hangman_stages = [
     """
        ------
