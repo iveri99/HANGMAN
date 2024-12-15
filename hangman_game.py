@@ -90,3 +90,8 @@ hangman_stages = [
     """
 ]
 
+guessed_word = ["_"] * len(chosen_word) # Converts length of chosen word into underscores
+
+print(hangman_stages[0]) # Prints first stage (0 index) of hangman
+guesses = 0 # Guesses will be counted, starts from 0
+
