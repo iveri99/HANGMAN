@@ -96,7 +96,7 @@ print(hangman_stages[0]) # Prints first stage (0 index) of hangman
 guesses = 0 # Guesses will be counted, starts from 0
 
 while "_" in guessed_word and guesses < len(hangman_stages) -1: # Main while loop 
-    print(f"Current word: {guessed_word}") # Prints the word in underscores
+    print("Current word: " + " ".join(guessed_word)) # Prints the word in underscores
     guess = input("Guess a letter: ") # Asks user for input
 
     if guess in chosen_word: # Conditional statement
