@@ -99,6 +99,8 @@ while "_" in guessed_word and guesses < len(hangman_stages) -1: # Main while loo
 
     if guess.isalpha() == False: # Edge case handling
         print("That is not a letter from a-z.") # Print statement
+    elif len(guess) > 1:
+        print("You entered too many characters.") 
     elif guess in chosen_word: # Conditional statement
         for i in range(len(chosen_word)): # For loop
             if chosen_word[i] == guess: # If user's guess is same as an index within chosen_word,
