@@ -95,16 +95,19 @@ guesses = 0 # Guesses will be counted, starts from 0
 
 while "_" in guessed_word and guesses < len(hangman_stages) -1: # Main while loop 
     print("Current word: " + " ".join(guessed_word)) # Prints the word in underscores
-    guess = input("Guess a letter: ") # Asks user for input
+    guess = input("Guess a letter: ").lower() # Asks user for input
 
-    if guess in chosen_word: # Conditional statement
+    if guess.isalpha() == False: # Edge case handling
+        print("That is not a letter from a-z.") # Print statement
+    elif guess in chosen_word: # Conditional statement
         for i in range(len(chosen_word)): # For loop
             if chosen_word[i] == guess: # If user's guess is same as an index within chosen_word,
                 guessed_word[i] = guess # guessed_word index (underscores) is changed to user's guess
         print("CORRECT!") # Print statement
     else:
         print("Incorrect guess, try again.") # Else if user's guess is wrong, print statement
-        guesses += 1 # Guesses variable is increased by 1 
+        guesses += 1 # Guesses variable is increased by 1
+     
 
     print(hangman_stages[guesses]) # Prints the stage of hangman based on num of guesses
 
