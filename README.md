@@ -10,4 +10,4 @@ A simple hangman game using ASCII art, loops and conditionals.
 
 ## Setup
 
-Copy this code and run it in any code editor that has Python installed.
+Copy this code and run it in any terminal that has Python installed.
